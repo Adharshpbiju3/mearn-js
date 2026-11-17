@@ -1,0 +1,392 @@
+java script
+------------------------------------
+js is a programming language
+
+- to give behaviour to the the page and perform logical operation
+- to run js program , we need a run time environment
+- that run time enviroment is called node
+- node js consist of js engine , thst compile the code and execute
+- browser can directly executemjs code it alredy contain a js engine
+- chrome : v8(JS engine)
+- mozilla : spider monkey (js engine)
+
+
+file extension for js file : .js
+-console.log("message") : commonly used debug command to print the result
+
+
+file name
+==============
+
+- use camelcase
+-  no space b/w words
+-  words can be separated by underscores (eg: home_page.js)
+-  should start with alphabets
+
+
+Data Type
+=================
+typeof() : inbuild method used to find type of variable
+
+
+
+
+pritive Type
+================
+  - string : text
+  - boolean : true/false
+  - numbers : integer values 
+  - undefined : variable is declared , but value is not assigned
+  - null 
+
+  how to declare a variable in js
+  ====================================
+  - var variable_name = value;
+  eg:
+  var name = "sulthan" 
+
+
+  Reference type
+  =====================
+  1) object
+      (array, object)
+
+
+      array eg: 
+                
+               var   name["vassu", "ram",1,true]
+
+      object eg:
+
+                 var student={
+                  name:"adhu",
+                  age: 22,
+                  location: "kochi"
+                 }            
+
+
+
+
+
+
+undefined demo
+=============
+var lastname;
+console.log("...........")
+console.log(typeof(lastname))
+
+
+null  demo
+===================
+var x= null;
+// console.log("...........")
+console.log(typeof(x))
+
+
+
+
+
+
+
+OPERATERS 
+
+Arithmetic operators
+---------------------------
+
++, -, *, /
+
+moduls operator :  % is return the reminder
+eg: 6%3
+
+
+Assignment operators
+---------------------------
+
+= to assign value to the operator
+eg: var name = "todd"
+
+
+Comparison operator
+----------------------------
+== or === : is used to compare the value
+
+
+=== : it check value and data type
+== : it only check value 
+
+
+< lessthan
+> graterthan
+>= graterthan or equal to
+<= lessthan or equal to
+!= not equal to value
+!== not equal to value and data
+
+
+Logical operators
+-----------------------------------
+
+&& all condition need to be true (AND)
+|| any condition need to be true (OR)
+
+
+
+Increment and Decrement operator
+=======================================
+
+++ : increase + 1+ 1
+-- 
+
+
+concatention
+=======================================
++   is used for concatination 
+
+-  it is used to combain to string if any value on right or left of an integer value is string js automaticaly convert the integer to string and append the value
+
+
+
+JS is dynammically type language
+=======================================
+whilw declaring a variable , there is no need to define the type of value going to store inside
+that variable .js automaticaly find its type
+var x= 23;
+- but in case of statically typed language , we have to define 
+its type also whilw declaring the variable
+eg:
+java
+string name = "john";
+int num = 10;
+
+
+
+
+
+eg :
+
+let value = 100;       // Number
+value = "Hello";       // String
+value = true;          // Boolean
+
+console.log(value);
+
+
+
+
+
+
+
+
+
+
+
+
+
+Temmplate literal
+-------------------------------------------------
+
+- use to append dynamic data wirh string
+`${variable}`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+condition statement / decision making statement
+========================================================
+
+1) if
+2) if else
+3) else if lader
+4) while
+5) do while
+6) switch
+
+
+
+
+
+if============
+
+if(condition){
+  // if condition true ,it enter inside the if block and
+  //  execute the code
+}
+
+
+
+if else ======================
+
+if(condition){
+  // if condition true ,it enter inside the if block and
+  //  execute the code
+}
+
+else{
+  // if condition false ,it enter inside the else block and
+  //  execute the code
+}
+
+
+
+
+
+ else if lader=============================
+ // if condition true,is enter the if block and execut
+
+
+
+else if(condition){
+  // if previous condition is false  and this condition is true , it enter 
+  inside this else if block and execut
+ }
+ else if(condition){
+  // if previous condition is false  and this condition is true , it enter 
+  inside this else if block and execut
+ }
+
+ else{
+  if all condition is false ,it enter this also and execut the code
+ }
+ 
+
+
+
+ ///////////////////whenever the condition satisfie if stop the execution
+
+
+ 4) while===============================
+ - repeatedly execute the code until the condition true
+
+ while(condition){
+  // code need to execute
+ }
+
+
+
+
+
+
+
+
+
+
+ break : is a keyward used to exit from the loop
+
+
+
+
+
+ 5)do while =============================
+
+ it execut the block of code  atleast once then 
+    repeatedly execute the block  of code as logn as
+
+    specific condition is true
+    syntax:
+    do{
+      // code to be executed 
+    }while(condition)
+
+
+
+
+
+    6) switch===================================================
+
+
+   switch is used to perform different  action based on d0ifferent
+   condition
+
+    the switch statement is select 0ne from many code block,
+    that need to execute
+
+
+    syntax:
+          
+          switch (condition){
+            case x:
+
+            // code block to execute;
+            break;
+
+            case y ;
+            // code block to execute;
+            break 
+
+            case z;
+            // code block to be execute
+            break;
+
+            defaults:
+            // default code to execute 
+
+          }
+
+
+
+
+
+          7)
+          Ternery operator================================================ternory
+
+          - simplest form of else  if
+
+          syntsx:
+                  
+condition? "code to execute":"code to execute"
+
+
+
+
+
+8) for loop  
+=====================================================
+
+-  - repeatedly execute the code until the condition true
+ 
+  syntax :
+
+  for(variable initialization , condition , increment/decrement){
+
+    //code block need to execut
+  }
+
+
+
+
+
+
+
+
+
+
+
+  Exit control loop and entry control loop
+  =====================================================================
+
+  entrt control loop : for , while
+  exit control loop : do while
+
+
+
+
+
+  8) nested loop
+  loop inside a loop
+  for(){
+    for(){
+      -----------
+    }
+  }
